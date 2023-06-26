@@ -1,34 +1,34 @@
-# Prerequisites
+# Ignore prerequisites
 *.d
 
-# Object files
+# Ignore object files
 *.o
 *.ko
 *.obj
 *.elf
 
-# Linker output
+# Ignore linker output
 *.ilk
 *.map
 *.exp
 
-# Precompiled Headers
+# Ignore precompiled headers
 *.gch
 *.pch
 
-# Libraries
+# Ignore libraries
 *.lib
 *.a
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Ignore shared objects (including Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
 
-# Executables
+# Ignore executables
 *.exe
 *.out
 *.app
@@ -36,13 +36,13 @@
 *.x86_64
 *.hex
 
-# Debug files
+# Ignore debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
+# Ignore kernel module compile results
 *.mod*
 *.cmd
 .tmp_versions/
@@ -51,5 +51,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-#Ignore main.c
+# Ignore main.c
 ./main.c
