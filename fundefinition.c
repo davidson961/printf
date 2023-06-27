@@ -116,7 +116,6 @@ int print_reverse(va_list types, char buffer[], int flags, int width, int precis
 	str = va_arg(types, char *);
 	if (str == NULL)
 	{
-	/*	UNUSED(precision) */
 		str = "(NULL)";
 	}
 	for (i = 0; str[i] != '\0'; i++)
@@ -129,22 +128,8 @@ int print_reverse(va_list types, char buffer[], int flags, int width, int precis
 	write(1, &z, 1);
 	count++;
 	}
-	/*
-	for (i = 0; str[i]; i++)
-	{
-
-	for (i = i - 1; i >= 0; i--)
-	{
-		char z = str[i];
-
-		write(1, &z, 1);
-		count++;
-	}
-	}
-	*/
 	return (count);
 }
-
 /**
  * print_rot13string - Prints a string in ROT13
  * @types: List of arguments
