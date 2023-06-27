@@ -102,11 +102,10 @@ int print_non_printable(va_list types, char buffer[],
  *
  * Return: Number of characters printed
  */
-int print_reverse(va_list types, char buffer[],
-	int flags, int width, int precision, int size)
+int print_reverse(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 	char *str;
-	int i, count = 0;
+	int i, count = 0, len = 0;
 
 	UNUSED(buffer);
 	UNUSED(flags);
@@ -117,10 +116,21 @@ int print_reverse(va_list types, char buffer[],
 	if (str == NULL)
 	{
 		UNUSED(precision);
-		str = ")Null(";
+		str = "(NULL)";
 	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	len++;
+	}
+	for (i = len; i >= 0; i--)
+	{
+	char z = str[i];
+	write(1, &z, 1);
+	count++;
+	}
+	/*
 	for (i = 0; str[i]; i++)
-		;
+	{
 
 	for (i = i - 1; i >= 0; i--)
 	{
@@ -129,6 +139,8 @@ int print_reverse(va_list types, char buffer[],
 		write(1, &z, 1);
 		count++;
 	}
+	}
+	*/
 	return (count);
 }
 
