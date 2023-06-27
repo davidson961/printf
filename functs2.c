@@ -111,11 +111,12 @@ int print_reverse(va_list types, char buffer[], int flags, int width, int precis
 	UNUSED(flags);
 	UNUSED(width);
 	UNUSED(size);
+	UNUSED(precision);
 
 	str = va_arg(types, char *);
 	if (str == NULL)
 	{
-		UNUSED(precision);
+	/*	UNUSED(precision) */
 		str = "(NULL)";
 	}
 	for (i = 0; str[i] != '\0'; i++)
