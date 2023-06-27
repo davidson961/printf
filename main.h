@@ -3,6 +3,7 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 #ifndef main__h__
 #define main__h__
 #define SPACE 2
