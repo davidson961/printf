@@ -1,5 +1,3 @@
-Convert_c_percent_p.c
-
 #include "main.h"
 
 unsigned int convert_c(va_list args, buffer_t *output,

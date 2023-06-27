@@ -1,6 +1,3 @@
-Convert_strings.c
-
-
 #include "main.h"
 
 unsigned int convert_s(va_list args, buffer_t *output,

@@ -1,3 +1,10 @@
+#include <stdarg.h>
+#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <unistd.h>
+#ifndef main__h__
+#define main__h__
 #define SPACE 2
 #define HASH 4
 #define ZERO 8
